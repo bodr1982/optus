@@ -174,7 +174,7 @@ $doc->addScriptdeclaration("\nvar sp_offanimation = '" . $this->params->get('off
     </head>
 
     <body class="<?php echo $this->helix3->bodyClass($body_classes); ?> off-canvas-menu-init">
-        <div class="header-logo"><img src="/optus/images/content/logo_main.png"></div>
+        <div class="header-logo"><img src="/images/content/logo_main.png"></div>
         <div class="body-wrapper">
             <div class="body-innerwrapper">
                 <?php $this->helix3->generatelayout(); ?>
@@ -210,11 +210,11 @@ $doc->addScriptdeclaration("\nvar sp_offanimation = '" . $this->params->get('off
             //before body
             if ($before_body = $this->helix3->getParam('before_body')) {
                 echo $before_body . "\n";
-            } 
+            }
         ?>
 
         <jdoc:include type="modules" name="debug" />
-        
+
         <!-- Preloader -->
         <jdoc:include type="modules" name="helixpreloader" />
 
@@ -222,6 +222,6 @@ $doc->addScriptdeclaration("\nvar sp_offanimation = '" . $this->params->get('off
         <?php if ($this->params->get('goto_top')) { ?>
             <a href="javascript:void(0)" class="scrollup" aria-label="<?php echo JText::_('HELIX_GOTO_TOP'); ?>">&nbsp;</a>
         <?php } ?>
-        <div class="footer-logo"><img src="/optus/images/content/logo_green.png"></div>
+        <div class="footer-logo"><img src="/images/content/logo_green.png"></div>
     </body>
 </html>
