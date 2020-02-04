@@ -112,7 +112,7 @@ JFactory::getDocument()->addScriptDeclaration("
 						</div>
 					<?php echo JHtml::_('bootstrap.endTab'); ?>
 				<?php endif; ?>
-				
+
 				<?php echo JHtml::_('bootstrap.addTab', $this->tab_name, 'sppostformats', JText::_('BLOG_OPTIONS')); ?>
 					<?php $attribs = json_decode($this->item->attribs); ?>
 					<?php echo $this->form->renderField('spfeatured_image','attribs', (isset($attribs->spfeatured_image)? $attribs->spfeatured_image: '')); ?>
@@ -128,7 +128,7 @@ JFactory::getDocument()->addScriptDeclaration("
 				<?php echo JHtml::_('bootstrap.endTab'); ?>
 
 				<?php echo JLayoutHelper::render('joomla.edit.params', $this); ?>
-				
+
 				<?php echo JHtml::_('bootstrap.addTab', $this->tab_name, 'publishing', JText::_('COM_CONTENT_PUBLISHING')); ?>
 					<?php echo $this->form->renderField('catid'); ?>
 					<?php echo $this->form->renderField('tags'); ?>
@@ -141,7 +141,7 @@ JFactory::getDocument()->addScriptDeclaration("
 					<?php if ($this->item->params->get('access-change')) : ?>
 						<?php echo $this->form->renderField('state'); ?>
 						<?php echo $this->form->renderField('featured'); ?>
-						<?php if ($params->get('show_publishing_options', 1) == 1) : ?>					
+						<?php if ($params->get('show_publishing_options', 1) == 1) : ?>
 							<?php echo $this->form->renderField('publish_up'); ?>
 							<?php echo $this->form->renderField('publish_down'); ?>
 						<?php endif; ?>
@@ -163,7 +163,7 @@ JFactory::getDocument()->addScriptDeclaration("
 				<?php echo JHtml::_('bootstrap.endTab'); ?>
 
 				<!-- <div class="tab-pane" id="metadata"> -->
-				<?php if ($params->get('show_publishing_options', 1) == 1) : ?>	
+				<?php if ($params->get('show_publishing_options', 1) == 1) : ?>
 					<?php echo JHtml::_('bootstrap.addTab', $this->tab_name, 'metadata', JText::_('COM_CONTENT_METADATA')); ?>
 						<?php echo $this->form->renderField('metadesc'); ?>
 						<?php echo $this->form->renderField('metakey'); ?>
@@ -178,7 +178,7 @@ JFactory::getDocument()->addScriptDeclaration("
 			<?php if ($this->params->get('enable_category', 0) == 1) :?>
 				<input type="hidden" name="jform[catid]" value="<?php echo $this->params->get('catid', 1); ?>" />
 			<?php endif; ?>
-			
+
 			<?php echo JHtml::_('form.token'); ?>
 		</fieldset>
 	</form>
