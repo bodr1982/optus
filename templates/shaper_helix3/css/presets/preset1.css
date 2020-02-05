@@ -6,7 +6,7 @@ a:hover {
 }
 .sp-megamenu-parent >li.active>a,
 .sp-megamenu-parent >li:hover>a {
-  color: #22b8f0;
+  color: #fff;
 }
 .sp-megamenu-parent .sp-dropdown li.sp-menu-item >a:hover {
   background: #22b8f0;
