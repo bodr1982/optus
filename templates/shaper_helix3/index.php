@@ -174,10 +174,11 @@ $doc->addScriptdeclaration("\nvar sp_offanimation = '" . $this->params->get('off
     </head>
 
     <body class="<?php echo $this->helix3->bodyClass($body_classes); ?> off-canvas-menu-init">
-        <div class="header-logo"><img src="/images/content/logo_main.png"></div>
         <div class="body-wrapper">
             <div class="body-innerwrapper">
+              <div class="header-logo"><a href="/"><img src="/images/content/logo_main.png"></a></div>
                 <?php $this->helix3->generatelayout(); ?>
+                <div class="footer-logo"><img src="/images/content/logo_green.png"></div>
             </div> <!-- /.body-innerwrapper -->
         </div> <!-- /.body-innerwrapper -->
 
@@ -222,6 +223,5 @@ $doc->addScriptdeclaration("\nvar sp_offanimation = '" . $this->params->get('off
         <?php if ($this->params->get('goto_top')) { ?>
             <a href="javascript:void(0)" class="scrollup" aria-label="<?php echo JText::_('HELIX_GOTO_TOP'); ?>">&nbsp;</a>
         <?php } ?>
-        <div class="footer-logo"><img src="/images/content/logo_green.png"></div>
     </body>
 </html>

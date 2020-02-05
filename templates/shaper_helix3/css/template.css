@@ -801,6 +801,7 @@ dl.article-info dd.hits span[class*=" icon-"] {
   display: block;
   float: right;
   position: relative;
+  margin-top: 30px;
 }
 .sp-megamenu-parent >li {
   display: inline-block;
@@ -813,8 +814,7 @@ dl.article-info dd.hits span[class*=" icon-"] {
 .sp-megamenu-parent >li >a,
 .sp-megamenu-parent >li >span {
   display: inline-block;
-  padding: 0 15px;
-  line-height: 90px;
+  padding: 5px 15px;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -2152,6 +2152,8 @@ ul.social-icons >li a {
 }
 .body-innerwrapper {
   overflow-x: hidden;
+  margin: 0 7%;
+  position: relative;
 }
 .layout-boxed .body-innerwrapper {
   max-width: 1240px;
@@ -3584,4 +3586,37 @@ input, textarea, .uneditable-input {
 
 .contacts-title {
   color: #B43A3A;
+}
+
+.content__button-block {
+    display: flex;
+    margin-top: 50px;
+}
+
+.content__button-calc button {
+    background-color: #B43A3A;
+    border: #B43A3A;
+    padding: 10px 20px;
+    margin: 0 20px;
+    box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.25);
+}
+
+.content__button-price button {
+  background-color: #4D897C;
+  border: #4D897C;
+  padding: 10px 20px;
+  box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.25);
+}
+
+.content__button-calc button a,
+.content__button-price a {
+  color: #fff;
+}
+
+li.sp-menu-item.current-item.active {
+  background-color: #4D897C;
+}
+
+li.sp-menu-item:hover {
+  background-color: #B43A3A;
 }
