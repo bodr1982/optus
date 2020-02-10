@@ -21,21 +21,21 @@ if (isset($this->error)) : ?>
 <div class="contact-form">
 	<form id="contact-form" action="<?php echo JRoute::_('index.php'); ?>" method="post" class="form-validate form-horizontal">
 		<fieldset>
-			<h3 class="contacts-title">СВЯЖИТЕСЬ С НАМИ</h3>
+			<h3 class="contacts-title"><?php echo JText::_('COM_CONTACT_CONTACTUS');?></h3>
 			<div class="control-group">
-				<input type="text" name="jform[contact_name]" id="jform_contact_name" placeholder="Введите имя" value=""
+				<input type="text" name="jform[contact_name]" id="jform_contact_name" placeholder="<?php echo JText::_('COM_CONTACT_YOUR_NAME');?>" value=""
 							 size="30" required aria-required="true" />
 			</div>
 			<div class="control-group">
-				<input type="text" name="jform[contact_email]" id="jform_contact_email" placeholder="Введите адресс электронной почты" value=""
+				<input type="text" name="jform[contact_email]" id="jform_contact_email" placeholder="<?php echo JText::_('COM_CONTACT_ENTER_EMAIL');?>" value=""
 							 size="30" required aria-required="true" />
 			</div>
 			<div class="control-group">
-				<input type="text" name="jform[contact_subject]" id="jform_contact_subject" placeholder="Введите тему сообщения" value=""
+				<input type="text" name="jform[contact_subject]" id="jform_contact_subject" placeholder="<?php echo JText::_('COM_CONTACT_ENTER_MESSAGE');?>" value=""
 							 size="30" required aria-required="true" />
 			</div>
 			<div class="control-group">
-				<textarea name="jform[contact_message]" id="jform_contact_message" placeholder="Введите сообщение"
+				<textarea name="jform[contact_message]" id="jform_contact_message" placeholder="<?php echo JText::_('COM_CONTACT_YOUR_MESSAGE');?>"
 							 rows="10" cols="45"></textarea>
 			</div>
 				<?php if ($this->params->get('show_email_copy', 0)){ ?>

@@ -3571,8 +3571,8 @@ input, textarea, .uneditable-input {
 
 .contact-desc-block {
     background: #4D897C;
-    padding: 10px 40px;
     text-align: right;
+    display: grid;
 }
 
 .contact-desc-block h3,
@@ -3580,7 +3580,18 @@ input, textarea, .uneditable-input {
     color: #fff;
 }
 
-.contact-desc {
+.contact-desc-block > h3,
+.contact-description {
+  padding: 2px 40px;
+}
+
+h3.contact-email {
+  background-color: #B43A3A;
+  margin: 0;
+  padding: 15px 40px;
+}
+
+.contact-description {
   font-size: 16px;
 }
 
@@ -3619,4 +3630,33 @@ li.sp-menu-item.current-item.active {
 
 li.sp-menu-item:hover {
   background-color: #B43A3A;
+}
+
+.content__vk-block {
+    position: relative;
+}
+.content__vak-left {
+    width: 60%;
+    float: left;
+}
+
+.content__vak-right {
+    width: 40%;
+    float: right;
+}
+
+.content__vak-right-img {
+    margin-top: 75px;
+    text-align: right;
+}
+
+.content__vak-right-img img {
+    display: inline-block;
+    width: 250px;
+    position: absolute;
+    right: 0;
+}
+
+.content__vk-block .qf3form.default .qf3txt input, .content__vk-block .qf3form.default select {
+    width: 50%;
 }
