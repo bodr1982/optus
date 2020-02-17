@@ -15,7 +15,7 @@ $cparams = JComponentHelper::getParams('com_media');
 $tparams = $this->item->params;
 
 ?>
-<h1>Наши контакты</h1>
+<h1><?php echo JText::_('COM_CONTACT_OUR_CONTACTS');?></h1>
 <div class="contact<?php echo $this->pageclass_sfx; ?>" itemscope itemtype="https://schema.org/Person">
   <div class="container">
     <div class="row">
