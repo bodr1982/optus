@@ -3673,3 +3673,108 @@ li.sp-menu-item:hover {
 .footer .nav>li>a:focus, .footer .nav>li>a:hover {
   background: none;
 }
+
+.vak-color-block {
+  display: flex;
+}
+
+.picture_source{
+     color: #bebebe;
+     font-size: 65%;
+}
+
+.block-left{
+	width:50%;
+	overflow:auto;
+	float:left;
+}
+
+.block-right{
+	width:50%;
+	overflow:auto;
+}
+
+.mtop {
+    margin-top: 25px;
+}
+
+.vacancies-red-block {
+    background: #b43a3a;
+    color: #fff;
+    padding-left: 25px;
+    padding-bottom: 15px;
+}
+
+.vacancies-grey-block {
+    background: #5b5b5b;
+    text-align: right;
+    padding-right: 25px;
+    padding-bottom: 15px;
+    color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+  footer#sp-footer {
+    padding-bottom: 100px;
+  }
+  .sp-module.footer {
+      position: relative;
+      right: 0;
+      top: 0;
+  }
+  .body-innerwrapper {
+    margin: 0;
+  }
+  .content__vak-left {
+      width: 100% !important;
+  }
+  .content__vak-right {
+    visibility: hidden;
+    width: 0 !important;
+    height: 0 !important;
+  }
+  .content__block-right {
+      width: 100%;
+  }
+  .content__block-left{
+      width: 100%;
+      padding: 0;
+  }
+  .content__button-block {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .content__button-calc,
+  .content__button-price {
+    margin-bottom: 15px;
+  }
+  .content__button-calc {
+    text-align: center;
+  }
+  .price-block {
+    display: block;
+  }
+  .block-left {
+    width: 100%;
+  }
+  .block-right {
+    width: 100%;
+  }
+  .vak-color-block {
+    display: block;
+  }
+  .content__vk-block .qf3form.default .qf3txt input {
+    width: 100% !important;
+  }
+  .contact-desc-block {
+    display: inline-block;
+  }
+  h3.contact-email {
+    padding: 15px 5px;
+  }
+  .form-horizontal .form-actions {
+    text-align: center;
+    padding-left: inherit;
+  }
+}

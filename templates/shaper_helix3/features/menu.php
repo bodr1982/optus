@@ -26,7 +26,7 @@ class Helix3FeatureMenu {
 
 		if($menu_type == 'mega_offcanvas') { ?>
 			<div class='sp-megamenu-wrapper'>
-				<a id="offcanvas-toggler" href="#" aria-label="<?php echo JText::_('HELIX_MENU'); ?>"><i class="fa fa-bars" aria-hidden="true" title="<?php echo JText::_('HELIX_MENU'); ?>"></i></a>
+				 <a id="offcanvas-toggler" href="#" aria-label="<?php echo JText::_('HELIX_MENU'); ?>"><i class="fa fa-bars" aria-hidden="true" title="<?php echo JText::_('HELIX_MENU'); ?>"></i></a>
 				<?php $this->helix3->loadMegaMenu('hidden-sm hidden-xs'); ?>
 			</div>
 		<?php } else if ($menu_type == 'mega') { ?>
