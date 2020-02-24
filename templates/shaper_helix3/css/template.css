@@ -3704,6 +3704,10 @@ li.sp-menu-item:hover {
     color: #fff;
 }
 
+.table-row h3 {
+    min-height: 50px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .content__block-left,
     .content__block-right {
