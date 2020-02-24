@@ -924,18 +924,9 @@ dl.article-info dd.hits span[class*=" icon-"] {
   animation: spMenuZoom 400ms;
 }
 #offcanvas-toggler {
-  float: right;
-  line-height: 87px;
-  margin-left: 15px;
-  font-size: 20px;
-}
-#offcanvas-toggler >i {
-  -webkit-transition: color 400ms, background-color 400ms;
-  -o-transition: color 400ms, background-color 400ms;
-  transition: color 400ms, background-color 400ms;
-}
-#offcanvas-toggler >i:hover {
-  color: #fff;
+    visibility: hidden;
+    width: 0;
+    height: 0;
 }
 .off-canvas-menu-init {
   overflow-x: hidden;
@@ -3713,7 +3704,50 @@ li.sp-menu-item:hover {
     color: #fff;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .content__block-left,
+    .content__block-right {
+      width: 100%;
+    }
+    .content__button-block {
+      margin: 25px 0;
+    }
+    .content-container {
+      min-height: 220px;
+    }
+    .sp-module.footer {
+      position: relative;
+    }
+}
+
+@media screen and (max-width: 991px) {
+  .content-container {
+    min-height: auto;
+  }
+  .price-block {
+    display: block;
+  }
+  #offcanvas-toggler {
+    float: right;
+    line-height: 87px;
+    margin-left: 15px;
+    font-size: 20px;
+    visibility: visible;
+  }
+  #offcanvas-toggler >i {
+    -webkit-transition: color 400ms, background-color 400ms;
+    -o-transition: color 400ms, background-color 400ms;
+    transition: color 400ms, background-color 400ms;
+  }
+  #offcanvas-toggler >i:hover {
+    color: #fff;
+  }
+  .sp-module.footer{
+    right: -40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   footer#sp-footer {
     padding-bottom: 100px;
   }
